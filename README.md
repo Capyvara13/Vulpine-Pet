@@ -1,6 +1,6 @@
 # 🦊 Vulpine Pet
 
-![Logo do Vulpine Pet](../Icon.png)
+![Logo do Vulpine Pet]([../Icon.png](https://github.com/Capyvara13/Vulpine-Pet/blob/main/Icon.png))
 
 ## 📝 Descrição
 
