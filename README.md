@@ -1,7 +1,5 @@
 # 🦊 Vulpine Pet
 
-![Logo do Vulpine Pet]([../Icon.png](https://github.com/Capyvara13/Vulpine-Pet/blob/main/Icon.png))
-
 ## 📝 Descrição
 
 Bem-vindo ao **Vulpine Pet**! Este é um aplicativo simples e intuitivo para a venda dos itens vendidos pela empresa fictícia Vulpine Pet.
