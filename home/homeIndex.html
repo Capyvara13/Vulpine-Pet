@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <title>Home - Vulpine Pet</title>
+    <link rel="icon" href="../Icon.png" type="image/png">
+
+    <style>
+        #searchInput:focus {
+            border-color: #f28030;
+            box-shadow: 0 0 0 0.25rem #f281308c;
+            outline: 0;
+        }
+
+        #btn-search {
+            background-color: #ffffff;
+            color: #f28030;
+            border-color: #f28030;
+        }
+
+        #btn-search:hover {
+            background-color: #f28030;
+            color: #ffffff;
+        }
+
+        .nav-link:hover {
+            color: #f28030 !important;
+        }
+
+        /* --- CSS para os Quadrados e Retângulos --- */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: transparent;
+            margin: 10px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 5px;
+            box-sizing: border-box;
+            border: solid 2px #f28030;
+            flex-shrink: 0;
+            cursor: pointer;
+        }
+
+        .square img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .square p {
+            font-size: 0.8rem;
+            color: black;
+            margin-bottom: 0;
+            line-height: 1.2;
+        }
+
+        .rectangle {
+            width: 220px;
+            height: 350px;
+            background-color: #007bff;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../home/homeIndex.html">
+                <img src="../IconCompacted.png" alt="Logo" class="img-fluid d-inline-block align-text-top"
+                    style="max-height: 48px;">
+                <img src="../IconText.png" alt="Logo" class="img-fluid d-inline-block align-text-top"
+                    style="max-height: 48px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <form class="d-none d-lg-flex my-2 my-lg-0 mx-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search"
+                        id="searchInput">
+                    <button class="btn btn-outline-success" type="submit" id="btn-search">Pesquisar</button>
+                </form>
+
+                <div class="navbar-nav ms-auto my-navbar-links">
+                    <a class="nav-link active" href="#">Entrar</a>
+                    <a class="nav-link active" href="#" style="margin-right: 2vw;">Cadastrar</a>
+                    <form class="d-flex d-lg-none mt-2" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 d-flex justify-content-center flex-wrap">
+                <div class="square">
+                    <img src="../img/categories/coleira.webp" alt="Coleiras">
+                    <p>Coleiras</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/brinquedo.webp" alt="Brinquedos">
+                    <p>Brinquedos</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/petisco.webp" alt="Petiscos">
+                    <p>Petiscos</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/arranhador.jpg" alt="Arranhador para gatos">
+                    <p>Arranhador</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/potes.jpg" alt="Potes">
+                    <p>Potes</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/remedio.jpg" alt="Remédios">
+                    <p>Remédios</p>
+                </div>
+                <div class="square">
+                    <img src="../img/categories/shampoo.webp" alt="Shampoo">
+                    <p>Shampoo</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-10 col-lg-8 text-center d-flex justify-content-center flex-wrap w-100">
+                <div class="rectangle">A</div>
+                <div class="rectangle">B</div>
+                <div class="rectangle">C</div>
+                <div class="rectangle">D</div>
+                <div class="rectangle">E</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
